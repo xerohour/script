@@ -1,0 +1,57 @@
+﻿Included in this torrent:
+
+* MS-DOS 3.30 OEM Adaptation Kit (source code)
+* MS-DOS 6.0 (source code)
+* DDKs / WDKs stretching from Win 3.11 to Windows 7 (source code)
+* Windows NT 3.5 (source code)
+* Windows NT 4 (source code)
+* Windows 2000 (source code)
+* Windows CE 3.0 Platform Builder (source code)
+* Windows CE 4.2 Shared Source (source code)
+* Windows CE 5.0 Shared Source (source code)
+* Windows CE 6.0 R3 Shared Source (source code)
+* Windows Embedded Compact 7.0 Shared Source (source code)
+* Windows Embedded Compact 2013 (CE 8.0) Shared Source (source code)
+* Windows 10 Shared Source Kit (source code)
+* Windows Research Kernel 1.2 (source code)
+* Xbox Live (source code)
+  (most recent copyright notice in the code says 2009)
+* Xbox OS (source code)
+  (both the "Barnabas" release from 2002, and the leak that happened in May 2020)
+
+
+This collection consists of Microsoft source code that has been leaked online over the years. Copies of the leaks are floating around online, but are sometimes very hard to find. I found these leaks through various means. I used torrents, eMule, EiskaltDC++, and various search engines (incl. Google of course).
+
+There might have been other leaks that I don't know about, and anyone is welcome to extend and improve this collection, and upload a new torrent. However, don't change the recipe. Use 7zip to compress everything (with no exception). This makes the torrent smaller, and minimizes waste of bandwidth and storage space. Make sure that the source code you're adding is actually genuine Microsoft code, and not code for something completely different, or modified by someone. Make sure you're not adding duplicates of source code that's already included. Don't remove anything from this collection, unless you find a more complete copy that has all the same files (same checksum) plus additional files.
+
+I have not touched the source code files at all, as it's important to keep them in their original state. The only thing I've done is delete 'Thumbs.db' files, which are just useless Windows thumbnails.
+
+Most (maybe all) of the leaks only contain partial source code, hence not everything necessary to be able to compile and run the program. Nevertheless, the code is still valuable and should be archived for future generations, and for everyone who is interested in reading it and learning from it. When it comes to Windows CE 4.2 and up, I installed the Shared Source from the original install media myself in Windows VMs (VirtualBox). I made sure to install the latest updates that have been officially made available by Microsoft. There are also various versions of the install media itself, of which some are more recent and updated and those are the ones I installed. If you're interested in Windows CE (or Compact Embedded as it's now called), a good place to get install images right now is @ https://the-eye.eu/public/MSDN.
+
+Going back to the source code leaks, there are multiple versions of each leak online, so I had to find a way to check which archives were identical (after extraction) and which weren't, and also which ones were more complete and untouched. I created a small Linux shell script to do this job, and I include the script in this torrent, since it might be helpful to others who do this kind of collecting and data hoarding.
+
+I extracted all the archives I found, and compressed them with 7zip, since that's the compression algorithm that's the best. Some of the leaks were originally compressed multiple times (archives within archives) using different formats / algorithms in multi-volume archives. This is apparently a common practice in "the scene", but it's really quite stupid. When you re-compress something you will usually generate a larger file than the file you're trying to compress, and this is due to how compression algorithms work. They work by finding patterns in the input data, and if the input data is already compressed, those patterns have been obfuscated / scrambled so the algorithm really has nothing to work with. Data should always be compressed only one time. However, it's alright to put a TAR archive inside another (compressed) archive, since TAR archives aren't compressed at all, but are strictly used to turn many files into one file.
+
+If you're going to extract an archive and compress the files using a different format, make sure to always use the official archiver tool for that format. There are different versions of each compression format, and they're always best supported by the official tools. So, always use the tools made by RARLAB to extract RAR archives, and always use '7-Zip' (made by Igor Pavlov) to extract 7zip archives. If you use Linux, there are also official command-line tools available. For older compression formats like Zip, there are many tools that can handle the format properly, including 'WinRAR', '7-Zip', and the 'zip' / 'unzip' commands in Linux.
+
+***
+
+The reason I'm sharing this torrent is because all information wants to be free.
+
+Please help me seed / share this important torrent, so others won't have to go through the work that I did collecting all the leaks (that I currently know of), archiving / compressing everything properly, comparing duplicate archives against other copies to see if they're identical or not. It was all in all pretty hard work, but I think it's worth it.
+
+This is my gift to Bill Gates, Steve Ballmer and Satya Nadella. I hope they'll like it.
+
+"Embrace, extend and extinguish" is Microsoft's strategy in the past, the present and in the future. Right now, they're in the honeymoon phase with open source. Don't be fooled.
+
+Let's spread this collection far and wide. Since Microsoft claims to love open source now, it's only fair that their source code is out in the open.
+
+Don't be scared to share this. Just remember to set your BitTorrent client to require encryption when connecting to peers (if it doesn't already). And if you really want to feel safe from Microsoft's ninjas you can use a VPN.
+
+SEED! The more peers seeding, and the bigger the torrent swarm, the more anonymous we'll all be.
+
+PS: This torrent only contains leaked source code, or at least source code that's not easy and readily available, and not code that has officially been released as open source by Microsoft. You can find the official code over @ Microsoft's GitHub page.
+
+After a discussion on 4chan (/g/) I decided to also download all Microsoft's patents. Anon provided a script, I modified it, and I've run it in the same directory a few times to verify that I got all the patents. That script is included in the 'script' directory.
+
+
